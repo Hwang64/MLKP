@@ -1,0 +1,16 @@
+train_net: "models/VGG16/train.prototxt"
+base_lr: 1e-3
+lr_policy: "fixed"
+gamma: 0.1
+stepsize: 1000000
+display: 20
+average_loss: 1
+# iter_size: 1
+momentum: 0.9
+weight_decay: 0.0005
+# We disable standard caffe solver snapshotting and implement our own snapshot
+# function
+snapshot: 0
+# We still use the snapshot prefix, though
+snapshot_prefix: "vgg16_mlkp"
+iter_size: 2
