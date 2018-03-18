@@ -53,7 +53,11 @@ Networks | Avg.Precision,IOU: | Avg.Precision,Area: |  Avg.Recal,#Det:  |    Avg
 1. Build Caffe and pycaffe
 
     ```
-
+    cd $MLKP_ROOT
+    git clone https://github.com/HIT-CS-HWang/caffe-mlkp.git
+    cd caffe-mlkp
+    make clean
+    make all -j16 && make pycaffe
     ```
 
 2. Build the Cython modules
