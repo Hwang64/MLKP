@@ -8,7 +8,7 @@ The code is modified from [py-faster-rcnn](https://github.com/rbgirshick/py-fast
 
 For multi-gpu training, please refer to [py-R-FCN-multiGPU](https://github.com/bharatsingh430/py-R-FCN-multiGPU/)
 
-### Machine configurations
+## Machine configurations
 
 - OS: Linux 14.02
 - GPU: TiTan 1080 Ti
@@ -17,24 +17,23 @@ For multi-gpu training, please refer to [py-R-FCN-multiGPU](https://github.com/b
 
 Slight changes may not results instabilities
 
-### PASCAL VOC detection results
+## PASCAL VOC detection results
 
    We have re-trained our networks and the results are refreshed as belows:
    
-   # VOC07_Test set results
+   ### VOC07_Test set results
    
 Networks | mAP |aero|bike|bird|boat|bottle| bus| car| cat|chair| cow|table| dog|horse|mbike|person|plant|sheep|sofa|train|tv |
 ---------|:---:|:--:|:--:|:--:|:--:|:----:|:--:|:--:|:--:|:---:|:--:|:---:|:--:|:---:|:---:|:----:|:---:|:---:|:--:|:---:|:-:|
   VGG16  | 78.4|80.4|83.0|77.6|70.0| 71.8 |84.2|87.5|86.7| 67.0|83.1| 70.3|84.9| 85.5| 81.9| 79.2 | 52.6| 79.7|79.6|81.7|81.4|     
-  ResNet | 81.0|80.3|87.1|80.8|73.5| 71.6 |86.0|88.4|88.8| 66.9|86.2| 72.8|88.7| 87.4| 86.7| 84.3 | 56.7| 
-84.9|81.0|86.7|81.7|   
+  ResNet | 81.0|80.3|87.1|80.8|73.5| 71.6 |86.0|88.4|88.8| 66.9|86.2| 72.8|88.7| 87.4| 86.7| 84.3 | 56.7| 84.9|81.0|86.7|81.7|   
 
-   # VOC12_Test set results
+   ### VOC12_Test set results
 
-### MS COCO detection results
+## MS COCO detection results
 
 
-### MLKP Installation 
+## MLKP Installation 
 
 0. Clone the RON repository
     ```
@@ -75,12 +74,12 @@ Networks | mAP |aero|bike|bird|boat|bottle| bus| car| cat|chair| cow|table| dog|
    4.0 Test VOC07 using VGG16 network
    
    python ./tools/test_net.py --gpu 0 --def models/VGG16/test.prototxt --net output/VGG16_voc07_test.caffemodel --imdb voc_2007_test --cfg experiments/cfgs/faster_rcnn_end2end.yml
-   # The final results of the model is mAP=78.4%
+   #### The final results of the model is mAP=78.4%
    
    4.1 Test VOC07 using ResNet-101 network   
    
    python ./tools/test_net.py --gpu 0 --def models/ResNet/test.prototxt --net output/ResNet_voc07_test.caffemodel --imdb voc_2007_test --cfg experiments/cfgs/faster_rcnn_end2end.yml
-   # The final results of the model is mAP=81.0%
+   #### The final results of the model is mAP=81.0%
   
 5. Train with PASCAL VOC dataset
     
