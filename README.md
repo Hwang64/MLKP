@@ -43,7 +43,7 @@ Networks | Avg.Precision,IOU: | Avg.Precision,Area: |  Avg.Recal,#Det:  |    Avg
 |--------|:------------------:|:-------------------:|:-----------------:|:-------------------:|
 |        |0.5:0.95  0.50  0.75| Small   Med.  Large |   1    10     100 | Small   Med.  Large |
   VGG16  |  26.9    48.4  26.9|  8.6    29.2   41.1 | 25.6  37.9   38.9 |  16.0   44.1   59.0 |
-  ResNet |
+  ResNet |  30.0    51.3  31.0|  9.6    32.4   47.2 | 27.8  40.7   41.7 |  16.4   46.8   65.1 |  
 ## MLKP Installation 
 
 0. Clone the RON repository
@@ -93,8 +93,7 @@ Networks | Avg.Precision,IOU: | Avg.Precision,Area: |  Avg.Recal,#Det:  |    Avg
       python ./tools/test_net.py --gpu 0 --def models/ResNet/test.prototxt --net output/ResNet_voc07_test.caffemodel --imdb voc_2007_test --cfg experiments/cfgs/faster_rcnn_end2end.yml
       ```
       #### The final results of the model is mAP=81.0%
-     
-  
+       
  5. Train with PASCAL VOC dataset
     
      Please download ImageNet-pretrained models first and put them into `$data/ImageNet_models`.
