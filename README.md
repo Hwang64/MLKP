@@ -82,13 +82,13 @@ Networks | Avg.Precision,IOU: | Avg.Precision,Area: |  Avg.Recal,#Det:  |    Avg
 
      We provide PASCAL VOC 2007 pretrained models based on VGG16 and ResNet, please download the models manully from [BaiduYun](https://pan.baidu.com/s/1HgxsixN674ZfGE-9lm77KQ) and put them in `$MLKP_ROOT/output/`
    
-   4.0 Test VOC07 using VGG16 network
+     4.0 Test VOC07 using VGG16 network
       ```
       python ./tools/test_net.py --gpu 0 --def models/VGG16/test.prototxt --net output/VGG16_voc07_test.caffemodel --imdb voc_2007_test --cfg experiments/cfgs/faster_rcnn_end2end.yml
      ```
       #### The final results of the model is mAP=78.4%
    
-   4.1 Test VOC07 using ResNet-101 network   
+     4.1 Test VOC07 using ResNet-101 network   
       ```
       python ./tools/test_net.py --gpu 0 --def models/ResNet/test.prototxt --net output/ResNet_voc07_test.caffemodel --imdb voc_2007_test --cfg experiments/cfgs/faster_rcnn_end2end.yml
       ```
@@ -99,13 +99,11 @@ Networks | Avg.Precision,IOU: | Avg.Precision,Area: |  Avg.Recal,#Det:  |    Avg
      Please download ImageNet-pretrained models first and put them into `$data/ImageNet_models`.
    
      5.0 Train using single GPU
-   
       ```
       python ./tools/train_net.py --gpu 0 --solver models/VGG16/solver.prototxt --weights data/ImageNet_models/VGG16.v2.caffemodel --imdb voc_2007_trainval+voc_2012_trainval --cfg experiments/cfgs/faster_rcnn_end2end.yml    
       ```
-   
+      
      5.1 Train using mutli-GPUs
-   
       ```
       python ./tools/train_net_multi_gpu.py --gpu 0,1,2,3 --solver models/VGG16/solver.prototxt --weights data/ImageNet_models/VGG16.v2.caffemodel --imdb voc_2007_trainval+voc_2012_trainval --cfg experiments/cfgs/faster_rcnn_end2end.yml        
       ```
