@@ -85,7 +85,7 @@ Networks | Avg.Precision,IOU: | Avg.Precision,Area: |  Avg.Recal,#Det:  |    Avg
      4.0 Test VOC07 using VGG16 network
       ```
       python ./tools/test_net.py --gpu 0 --def models/VGG16/test.prototxt --net output/VGG16_voc07_test.caffemodel --imdb voc_2007_test --cfg experiments/cfgs/faster_rcnn_end2end.yml
-     ```
+      ```
       #### The final results of the model is mAP=78.4%
    
      4.1 Test VOC07 using ResNet-101 network   
