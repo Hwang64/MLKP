@@ -48,13 +48,13 @@ Networks | Avg.Precision,IOU: | Avg.Precision,Area: |  Avg.Recal,#Det:  |    Avg
 
 0. Clone the RON repository
     ```
-    git clone https://github.com/HIT-CS-HWang/MLKP.git
+    git clone https://github.com/Hwang64/MLKP.git
     ```
 1. Build Caffe and pycaffe
 
     ```
     cd $MLKP_ROOT
-    git clone https://github.com/HIT-CS-HWang/caffe-mlkp.git
+    git clone https://github.com/Hwang64/caffe-mlkp.git
     cd caffe-mlkp
     make clean
     make all -j16 && make pycaffe
@@ -115,8 +115,8 @@ Networks | Avg.Precision,IOU: | Avg.Precision,Area: |  Avg.Recal,#Det:  |    Avg
      python ./tools/train_net.py --gpu 0\ 
              --solver models/VGG16/solver.prototxt\
              --weights data/ImageNet_models/VGG16.v2.caffemodel\
-             --imdb voc_2007_trainval+voc_2012_trainval 
-              --cfg experiments/cfgs/faster_rcnn_end2end.yml 
+             --imdb voc_2007_trainval+voc_2012_trainval\ 
+             --cfg experiments/cfgs/faster_rcnn_end2end.yml 
      ```
      
      5.1 Train using multi-GPUs
