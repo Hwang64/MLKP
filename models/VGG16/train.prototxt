@@ -392,7 +392,8 @@ layer {
     kernel_size: 1
     bias_term:false
     weight_filler {
-      type: "xavier"
+      type: "constant"
+      value: 0
     }
   }
 }
