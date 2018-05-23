@@ -1,5 +1,5 @@
 # MLKP
-CVPR18 Paper Multi-scale Location-aware Kernel Representation for Object Detection
+CVPR18 Paper Multi-scale Location-aware Kernel Representation for Object Detection. [arxiv](https://arxiv.org/abs/1804.00428)
 
 MLKP is a novel compact, location-aware kernel approximation method to represent object proposals for effective object detection. Our method is among the first which exploits high-order statistics in improving performance of object detection. The significant improvement
 over the first-order statistics based counterparts demonstrates the effectiveness of the proposed MLKP.
@@ -46,7 +46,7 @@ Networks | Avg.Precision,IOU: | Avg.Precision,Area: |  Avg.Recal,#Det:  |    Avg
   ResNet |  30.0    51.3  31.0|  9.6    32.4   47.2 | 27.8  40.7   41.7 |  16.4   46.8   65.1 |  
 ## MLKP Installation 
 
-0. Clone the RON repository
+0. Clone the MLKP repository
     ```
     git clone https://github.com/Hwang64/MLKP.git
     ```
