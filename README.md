@@ -1,5 +1,5 @@
 # MLKP
-CVPR18 Paper Multi-scale Location-aware Kernel Representation for Object Detection. [arxiv](https://arxiv.org/abs/1804.00428)
+CVPR18 Paper: Multi-scale Location-aware Kernel Representation for Object Detection. Paper can be found in [arXiv](https://arxiv.org/abs/1804.00428).
 
 MLKP is a novel compact, location-aware kernel approximation method to represent object proposals for effective object detection. Our method is among the first which exploits high-order statistics in improving performance of object detection. The significant improvement
 over the first-order statistics based counterparts demonstrates the effectiveness of the proposed MLKP.
@@ -84,7 +84,7 @@ Networks | Avg.Precision,IOU: | Avg.Precision,Area: |  Avg.Recal,#Det:  |    Avg
 
  4. Test with PASCAL VOC dataset
 
-     We provide PASCAL VOC 2007 pretrained models based on VGG16 and ResNet, please download the models manully from [BaiduYun](https://pan.baidu.com/s/1HgxsixN674ZfGE-9lm77KQ) and put them in `$MLKP_ROOT/output/`
+     We provide PASCAL VOC 2007 pretrained models based on VGG16 and ResNet, please download the models manully from [BaiduYun](https://pan.baidu.com/s/1HgxsixN674ZfGE-9lm77KQ) or [GoogleDrive](https://drive.google.com/open?id=1ojzX0FeIUFe8IfaeY6tbmai_usu9-0TF) and put them in `$MLKP_ROOT/output/`
    
      4.0 Test VOC07 using VGG16 network
       ```
