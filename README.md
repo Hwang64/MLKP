@@ -1,8 +1,19 @@
 # MLKP
-CVPR18 Paper: Multi-scale Location-aware Kernel Representation for Object Detection. Paper can be found in [arXiv](https://arxiv.org/abs/1804.00428).
+CVPR18 Paper: Multi-scale Location-aware Kernel Representation for Object Detection. Paper can be found in [arXiv](https://arxiv.org/abs/1804.00428) and [CVPR2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Wang_Multi-Scale_Location-Aware_Kernel_CVPR_2018_paper.pdf).
 
-MLKP is a novel compact, location-aware kernel approximation method to represent object proposals for effective object detection. Our method is among the first which exploits high-order statistics in improving performance of object detection. The significant improvement
-over the first-order statistics based counterparts demonstrates the effectiveness of the proposed MLKP.
+MLKP is a novel compact, location-aware kernel approximation method to represent object proposals for effective object detection. Our method is among the first which exploits high-order statistics in improving performance of object detection. The significant improvement over the first-order statistics based counterparts demonstrates the effectiveness of the proposed MLKP.
+
+## Citing 
+If you find MLKP useful in your research, please consider citing:
+```
+@InProceedings{Wang_2018_CVPR,
+author = {Wang, Hao and Wang, Qilong and Gao, Mingqi and Li, Peihua and Zuo, Wangmeng},
+title = {Multi-Scale Location-Aware Kernel Representation for Object Detection},
+booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2018}
+}
+```
 
 The code is modified from [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn). 
 
