@@ -14,6 +14,17 @@ month = {June},
 year = {2018}
 }
 ```
+```
+@article{wang2021multi,
+  title={Multi-scale structural kernel representation for object detection},
+  author={Wang, Hao and Wang, Qilong and Li, Peihua and Zuo, Wangmeng},
+  journal={Pattern Recognition},
+  volume={110},
+  pages={107593},
+  year={2021},
+  publisher={Elsevier}
+}
+```
 
 The code is modified from [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn). 
 
